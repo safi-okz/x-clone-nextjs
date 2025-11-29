@@ -11,6 +11,15 @@
   --breakpoint-xl: 1078px;
   --breakpoint-xxl: 1265px; /* added your custom breakpoint here */
   /* --breakpoint-2xl: 1536px; */
+
+  /* Colors */
+  --color-textGray: #71767b;
+  --color-textGrayLight: #e7e9ea;
+  --color-borderGray: #2f3336;
+  --color-inputGray: #202327;
+  --color-iconBlue: #1d9bf0;
+  --color-iconGreen: #00ba7c;
+  --color-iconPink: #f91880;
 }
 
 body {

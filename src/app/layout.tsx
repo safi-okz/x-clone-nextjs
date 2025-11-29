@@ -33,7 +33,7 @@ export default function RootLayout({
           <div className="px-2 xsm:px-4 xxl:px-8 bg-red-500 h-screen">
             <LeftBar />
           </div>
-          <div className="flex-1 lg:min-w-[600px] border-x border-gray-100 bg-green-400 h-screen">
+          <div className="flex-1 lg:min-w-[600px] border-x border-borderGray h-screen">
             {children}
           </div>
           <div className="hidden lg:flex ml-4 md:ml-8 px-2 bg-blue-500 h-screen">
