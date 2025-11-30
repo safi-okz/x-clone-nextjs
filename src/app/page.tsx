@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Feed from "@/components/Feed";
+import Shared from "@/components/Shared";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello, Next.js!</h1>
+      <Feed />
+      <Shared />
     </div>
   );
 }

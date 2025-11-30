@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import ImageKit from "@/components/ImageKit";
 
 const menuList = [
   {
@@ -69,7 +69,13 @@ const LeftBar = () => {
     <div className="h-screen flex flex-col justify-between pt-2 pb-8 sticky top-0">
       <div className="flex flex-col gap-4 text-lg items-center xxl:items-start">
         <Link href="/" className="p-2 rounded-full hover:bg-[#181818]">
-          <Image src="/icons/logo.svg" alt="logo" width={24} height={24} />
+          <ImageKit
+            src="/icons/logo.svg"
+            alt="logo"
+            width={24}
+            height={24}
+            tr={false}
+          />
         </Link>
 
         {/* Menu List */}
@@ -80,11 +86,12 @@ const LeftBar = () => {
               key={menu.id}
               className="flex items-center p-2 rounded-full hover:bg-[#181818] gap-2 space-x-4"
             >
-              <Image
+              <ImageKit
                 src={`/icons/${menu.icon}`}
                 alt={menu.name}
                 width={24}
                 height={24}
+                tr={false}
               />
               <span className="hidden xxl:inline">{menu.name}</span>
             </Link>
@@ -96,7 +103,13 @@ const LeftBar = () => {
           href="/"
           className="block xxl:hidden bg-white text-black rounded-full font-bold py-2 px-2"
         >
-          <Image src="/icons/post.svg" alt="Tweet" width={24} height={24} />
+          <ImageKit
+            src="/icons/post.svg"
+            alt="Tweet"
+            width={24}
+            height={24}
+            tr={false}
+          />
         </Link>
         <Link
           href="/"
@@ -108,12 +121,12 @@ const LeftBar = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 relative rounded-full overflow-hidden">
-            <Image
+            <ImageKit
               src="/general/avatar.png"
               alt="lama dev"
               width={100}
               height={100}
-              priority={true}
+              tr={false}
             />
           </div>
           <div className="hidden xxl:flex flex-col">
