@@ -30,10 +30,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="mx-auto flex justify-between max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl xxl:max-w-screen-xxl">
-          <div className="px-2 xsm:px-4 xxl:px-8 bg-red-500 h-screen">
+          <div className="px-2 xsm:px-4 xxl:px-8">
             <LeftBar />
           </div>
-          <div className="flex-1 lg:min-w-[600px] border-x border-borderGray h-screen">
+          <div className="flex-1 lg:min-w-[600px] border-x border-borderGray">
             {children}
           </div>
           <div className="hidden lg:flex ml-4 md:ml-8 px-2 bg-blue-500 h-screen">
